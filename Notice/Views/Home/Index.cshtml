@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+@using (Html.BeginForm("Enter", "Home", FormMethod.Post))
+{
+    <p>Введите свой ник: </p>
+    @Html.TextBox("Name");
+    <p>Введите свой пароль: </p>
+    @Html.Password("Password");
+    <p><input type="submit" value="Войти" /></p>
+}
+    </div>
+</body>
+</html>
